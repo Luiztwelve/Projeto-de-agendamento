@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ana Beatriz Eugênio - Nail Designer especializada em alongamento, esmaltação em gel, banho de gel e nail art personalizada. Beleza nos detalhes, perfeição nas suas unhas.">
+    <title>Ana Beatriz Eugênio | Nail Designer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Folha de Estilos Principal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Compatibilidade caso abra design.css -->
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+    <!-- ============================================== -->
+    <!-- CABEÇALHO / NAVEGAÇÃO                          -->
+    <!-- ============================================== -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <!-- Logotipo -->
+            <a href="#inicio" class="brand-logo" aria-label="Ana Beatriz Eugênio Nail Designer">
+                <div class="logo-monogram-circle">
+                    <svg viewBox="0 0 100 100" class="monogram-svg" aria-hidden="true">
+                        <ellipse cx="50" cy="50" rx="42" ry="46" class="circle-ring" />
+                        <path d="M 38 24 L 38 76" class="letter-stem" />
+                        <path d="M 32 24 L 44 24" class="serif-cap" />
+                        <path d="M 30 76 L 46 76" class="serif-cap" />
+                        <path d="M 38 35 Q 54 22 68 38 Q 74 48 74 62 Q 74 76 60 76" class="curve-flourish" />
+                        <path d="M 28 50 Q 48 50 68 50" class="cross-bar" />
+                        <path d="M 38 30 Q 62 30 62 44 Q 62 54 38 54" class="b-loop" />
+                        <path d="M 38 54 Q 68 54 68 66 Q 68 76 38 76" class="b-loop" />
+                        <!-- Borboleta no topo -->
+                        <g transform="translate(68, 10) scale(0.55)" class="butterfly-icon">
+                            <path d="M 12 18 C 6 6 0 10 2 20 C 3 26 10 28 12 28" />
+                            <path d="M 12 28 C 4 30 2 38 8 42 C 12 44 14 36 12 28" />
+                            <path d="M 16 18 C 24 2 34 6 30 18 C 28 26 18 28 16 28" />
+                            <path d="M 16 28 C 24 30 28 40 20 44 C 16 46 14 36 16 28" />
+                            <path d="M 14 16 L 14 36" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name-top">ANA BEATRIZ</span>
+                    <span class="logo-name-bottom">EUGENIO</span>
+                    <span class="logo-sub">NAIL DESIGNER</span>
+                </div>
+            </a>
+
+            <!-- Menu de Navegação Desktop -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#trabalho" class="nav-link">Meu trabalho</a></li>
+                    <li class="nav-item"><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão de Ação CTA Header -->
+            <div class="header-actions">
+                <a href="agendamento.html" target="_blank" rel="noopener noreferrer" class="btn btn-header">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>Agendar horáriooooooooooo</span>
+                </a>
+
+                <!-- Botão Toggle Hambúrguer Mobile -->
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Mobile Drawer -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="mobile-drawer-header">
+            <span class="drawer-title">Menu</span>
+            <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="#inicio" class="mobile-nav-link active">Início</a></li>
+            <li><a href="#sobre" class="mobile-nav-link">Sobre mim</a></li>
+            <li><a href="#servicos" class="mobile-nav-link">Serviços</a></li>
+            <li><a href="#trabalho" class="mobile-nav-link">Meu trabalho</a></li>
+            <li><a href="#depoimentos" class="mobile-nav-link">Depoimentos</a></li>
+            <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+        </ul>
+        <div class="mobile-drawer-footer">
+            <a href="agendamento.html" target="_blank" rel="noopener noreferrer" class="btn btn-header w-100">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Agendar horáriooooooooooo1</span>
+            </a>
+        </div>
+    </div>
+
+    <main id="main-content">
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO HERO (BANNER PRINCIPAL)                  -->
+        <!-- ============================================== -->
+        <section class="hero-section" id="inicio">
+            <!-- Elementos decorativos de fundo -->
+            <div class="hero-floral-bg"></div>
+
+            <div class="container hero-container">
+                <!-- Coluna Esquerda: Marca e Apresentação -->
+                <div class="hero-content">
+                    
+                    <!-- Emblema / Monograma com Borboleta -->
+                    <div class="hero-monogram-wrapper">
+                        <div class="hero-monogram-circle">
+                            <svg viewBox="0 0 100 100" class="hero-monogram-svg">
+                                <ellipse cx="50" cy="50" rx="42" ry="46" class="circle-ring" />
+                                <path d="M 38 24 L 38 76" class="letter-stem" />
+                                <path d="M 32 24 L 44 24" class="serif-cap" />
+                                <path d="M 30 76 L 46 76" class="serif-cap" />
+                                <path d="M 38 35 Q 54 22 68 38 Q 74 48 74 62 Q 74 76 60 76" class="curve-flourish" />
+                                <path d="M 28 50 Q 48 50 68 50" class="cross-bar" />
+                                <path d="M 38 30 Q 62 30 62 44 Q 62 54 38 54" class="b-loop" />
+                                <path d="M 38 54 Q 68 54 68 66 Q 68 76 38 76" class="b-loop" />
+                                <!-- Borboleta elegante -->
+                                <g transform="translate(68, 10) scale(0.55)" class="butterfly-icon">
+                                    <path d="M 12 18 C 6 6 0 10 2 20 C 3 26 10 28 12 28" />
+                                    <path d="M 12 28 C 4 30 2 38 8 42 C 12 44 14 36 12 28" />
+                                    <path d="M 16 18 C 24 2 34 6 30 18 C 28 26 18 28 16 28" />
+                                    <path d="M 16 28 C 24 30 28 40 20 44 C 16 46 14 36 16 28" />
+                                    <path d="M 14 16 L 14 36" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="hero-brand-titles">
+                            <h1 class="hero-title-name">ANA BEATRIZ</h1>
+                            <h2 class="hero-title-last">EUGENIO</h2>
+                            <p class="hero-title-tag">NAIL DESIGNER</p>
+                        </div>
+                    </div>
+
+                    <!-- Frase em Caligrafia / Manuscrito -->
+                    <p class="hero-script-phrase">
+                        Beleza nos detalhes, perfeição nas suas unhas.
+                    </p>
+
+                    <!-- Tags de Especialidades com Barras Separadoras -->
+                    <div class="hero-specialties">
+                        <span class="specialty-item">ALONGAMENTO</span>
+                        <span class="specialty-divider">|</span>
+                        <span class="specialty-item">ESMALTAÇÃO</span>
+                        <span class="specialty-divider">|</span>
+                        <span class="specialty-item">NAIL ART</span>
+                    </div>
+
+                    <!-- Botão de Agendamento Hero -->
+                    <div class="hero-cta-wrapper">
+                        <a href="agendamento.html" target="_blank" rel="noopener noreferrer" class="btn btn-hero">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Agendar meu horárioooooo2</span>
+                            <i class="fa-solid fa-chevron-right hero-arrow-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Imagem de Mão Manicure em Destaque -->
+                <div class="hero-visual">
+                    <div class="hero-image-card">
+                        <!-- Imagem de mãos com unhas francesinhas perfeitas, anel dourado e suéter de tricô -->
+                        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=1200&q=85" 
+                             alt="Unhas impecáveis com acabamento em francesinha e detalhes refinados" 
+                             class="hero-main-photo">
+                        
+                        <!-- Traço fino decorativo de borboleta superior -->
+                        <div class="floating-art butterfly-art">
+                            <svg viewBox="0 0 100 100" class="line-art-svg">
+                                <path d="M 48 50 C 32 26 8 20 12 50 C 14 62 32 68 48 56" />
+                                <path d="M 48 56 C 28 62 20 84 38 88 C 46 90 50 74 48 56" />
+                                <path d="M 52 50 C 68 26 92 20 88 50 C 86 62 68 68 52 56" />
+                                <path d="M 52 56 C 72 62 80 84 62 88 C 54 90 50 74 52 56" />
+                                <path d="M 50 42 L 50 74" />
+                                <path d="M 50 42 Q 42 30 34 32" />
+                                <path d="M 50 42 Q 58 30 66 32" />
+                            </svg>
+                        </div>
+
+                        <!-- Citação manuscrita no canto inferior direito -->
+                        <div class="floating-quote">
+                            <p class="quote-cursive">Unhas bem feitas, elevam a sua autoestima!</p>
+                            <span class="quote-heart">♡</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO NOSSOS SERVIÇOS                          -->
+        <!-- ============================================== -->
+        <section class="services-section" id="servicos">
+            <div class="container">
+                <!-- Título da Seção com Sublinhado Elegante -->
+                <div class="services-header-group">
+                    <span class="section-pretitle">NOSSOS</span>
+                    <h2 class="section-main-title">SERVIÇOS</h2>
+                    <div class="section-title-line"></div>
+                </div>
+
+                <!-- Grid com os 5 Serviços e divisórias verticais -->
+                <div class="services-grid">
+                    
+                    <!-- Card 1: Alongamento de Unhas -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <!-- Ícone Unha Estilizada -->
+                            <svg viewBox="0 0 60 60" class="service-svg" fill="none">
+                                <rect x="3" y="3" width="54" height="54" rx="27" class="service-icon-ring" />
+                                <path d="M 22 42 C 22 24 26 16 30 16 C 34 16 38 24 38 42" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                                <path d="M 24 26 C 26 24 34 24 36 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M 20 44 Q 30 46 40 44" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">ALONGAMENTO<br>DE UNHAS</h3>
+                        <p class="service-card-desc">Unhas lindas, resistentes e com acabamento impecável.</p>
+                    </div>
+
+                    <div class="service-grid-divider"></div>
+
+                    <!-- Card 2: Banho de Gel -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <!-- Ícone Diamante -->
+                            <svg viewBox="0 0 60 60" class="service-svg" fill="none">
+                                <rect x="3" y="3" width="54" height="54" rx="27" class="service-icon-ring" />
+                                <path d="M 20 24 L 40 24 L 44 32 L 30 44 L 16 32 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                                <path d="M 20 24 L 26 32 L 30 44" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                                <path d="M 40 24 L 34 32 L 30 44" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                                <path d="M 16 32 L 44 32" stroke="currentColor" stroke-width="1.4" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">BANHO DE GEL</h3>
+                        <p class="service-card-desc">Mais resistência e durabilidade para suas unhas naturais.</p>
+                    </div>
+
+                    <div class="service-grid-divider"></div>
+
+                    <!-- Card 3: Esmaltação em Gel -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <!-- Ícone Vidro de Esmalte com Pincel -->
+                            <svg viewBox="0 0 60 60" class="service-svg" fill="none">
+                                <rect x="3" y="3" width="54" height="54" rx="27" class="service-icon-ring" />
+                                <path d="M 26 16 L 34 16 L 34 26 L 26 26 Z" stroke="currentColor" stroke-width="1.8" />
+                                <path d="M 20 28 C 20 26 40 26 40 28 L 41 42 C 41 45 39 46 36 46 L 24 46 C 21 46 19 45 19 42 Z" stroke="currentColor" stroke-width="1.8" />
+                                <ellipse cx="30" cy="36" rx="5" ry="4" stroke="currentColor" stroke-width="1.4" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">ESMALTAÇÃO<br>EM GEL</h3>
+                        <p class="service-card-desc">Praticidade e brilho por muito mais tempo.</p>
+                    </div>
+
+                    <div class="service-grid-divider"></div>
+
+                    <!-- Card 4: Nail Art -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <!-- Ícone Coração Estilizado -->
+                            <svg viewBox="0 0 60 60" class="service-svg" fill="none">
+                                <rect x="3" y="3" width="54" height="54" rx="27" class="service-icon-ring" />
+                                <path d="M 30 42 C 20 34 18 25 24 21 C 28 18 30 22 30 22 C 30 22 32 18 36 21 C 42 25 40 34 30 42 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">NAIL ART</h3>
+                        <p class="service-card-desc">Decorações personalizadas de acordo com seu estilo.</p>
+                    </div>
+
+                    <div class="service-grid-divider"></div>
+
+                    <!-- Card 5: Manutenção -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <!-- Ícone Estrela de 4 pontas / Brilho -->
+                            <svg viewBox="0 0 60 60" class="service-svg" fill="none">
+                                <rect x="3" y="3" width="54" height="54" rx="27" class="service-icon-ring" />
+                                <path d="M 30 18 Q 30 30 42 30 Q 30 30 30 42 Q 30 30 18 30 Q 30 30 30 18 Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">MANUTENÇÃO</h3>
+                        <p class="service-card-desc">Cuidados para manter suas unhas sempre lindas.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO SOBRE MIM                                -->
+        <!-- ============================================== -->
+        <section class="about-section" id="sobre">
+            <div class="container">
+                <div class="about-layout-grid">
+                    
+                    <!-- Coluna 1: Foto da Nail Designer em Atendimento -->
+                    <div class="about-photo-wrapper">
+                        <div class="about-photo-frame">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" 
+                                 alt="Nail Designer Ana Beatriz realizando procedimento com técnica e cuidado" 
+                                 class="about-photo-img">
+                            <div class="about-photo-badge">
+                                <span class="badge-number">5+</span>
+                                <span class="badge-text">Anos de experiência</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 2: Bio e Apresentação -->
+                    <div class="about-bio-column">
+                        <span class="section-pretitle">SOBRE MIM</span>
+                        <h2 class="about-heading">Prazer, eu sou Ana!</h2>
+                        <p class="about-text-lead">
+                            Sou Nail Designer apaixonada por transformar unhas em verdadeiras obras de arte. Meu objetivo é proporcionar um atendimento especial, com cuidado em cada detalhe e um resultado que faça você se sentir ainda mais linda.
+                        </p>
+                        <p class="about-text-extra">
+                            Utilizo técnicas modernas de biossegurança, materiais premium e esterilização rigorosa para assegurar a saúde da sua lâmina ungueal com máxima elegância e durabilidade.
+                        </p>
+                        <div class="about-bio-cta">
+                            <a href="#contato" class="btn btn-outline">
+                                <span>Conversar com a Ana</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Coluna 3: Lista de Diferenciais com Ícones -->
+                    <div class="about-features-column">
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-icon"><i class="fa-regular fa-heart"></i></span>
+                                <span class="feature-label">Atendimento personalizado</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon"><i class="fa-regular fa-star"></i></span>
+                                <span class="feature-label">Acabamento impecável</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                                <span class="feature-label">Higiene e cuidado</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon"><i class="fa-regular fa-gem"></i></span>
+                                <span class="feature-label">Produtos de qualidade</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon"><i class="fa-solid fa-house"></i></span>
+                                <span class="feature-label">Ambiente acolhedor</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon"><i class="fa-solid fa-star-half-stroke"></i></span>
+                                <span class="feature-label">Atenção a cada detalhe</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO MEU TRABALHO / GALERIA DE FOTOS         -->
+        <!-- ============================================== -->
+        <section class="gallery-section" id="trabalho">
+            <div class="container">
+                <div class="section-center-header">
+                    <span class="section-pretitle">PORTFÓLIO</span>
+                    <h2 class="section-main-title">MEU TRABALHO</h2>
+                    <p class="section-subtitle">Confira algumas das transformações realizadas com amor, precisão e estilo.</p>
+                    <div class="section-title-line center-line"></div>
+                </div>
+
+                <!-- Filtros da Galeria -->
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="alongamento">Alongamento</button>
+                    <button class="filter-btn" data-filter="banho">Banho de Gel</button>
+                    <button class="filter-btn" data-filter="esmaltacao">Esmaltação em Gel</button>
+                    <button class="filter-btn" data-filter="nailart">Nail Art</button>
+                </div>
+
+                <!-- Grid de Imagens do Portfólio -->
+                <div class="gallery-grid" id="galleryGrid">
+                    
+                    <!-- Item 1: Francesinha Clássica -->
+                    <div class="gallery-card" data-category="alongamento">
+                        <div class="gallery-card-inner">
+                            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80" alt="Alongamento em Gel com Francesinha Fina" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <span class="overlay-tag">Alongamento em Gel</span>
+                                    <h4 class="overlay-title">Francesinha Fina & Elegante</h4>
+                                    <button class="overlay-zoom-btn" aria-label="Ampliar imagem">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Banho de Gel Nude -->
+                    <div class="gallery-card" data-category="banho">
+                        <div class="gallery-card-inner">
+                            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&q=80" alt="Banho de Gel com Brilho Intenso" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <span class="overlay-tag">Banho de Gel</span>
+                                    <h4 class="overlay-title">Nude Rosé Natural & Brilho</h4>
+                                    <button class="overlay-zoom-btn" aria-label="Ampliar imagem">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Nail Art com Folha de Ouro -->
+                    <div class="gallery-card" data-category="nailart">
+                        <div class="gallery-card-inner">
+                            <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&w=700&q=80" alt="Nail Art com Detalhes Dourados" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <span class="overlay-tag">Nail Art</span>
+                                    <h4 class="overlay-title">Traços Minimalistas com Ouro</h4>
+                                    <button class="overlay-zoom-btn" aria-label="Ampliar imagem">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Esmaltação em Gel Clássica -->
+                    <div class="gallery-card" data-category="esmaltacao">
+                        <div class="gallery-card-inner">
+                            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=700&q=80" alt="Esmaltação em Gel Vermelho Elegante" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <span class="overlay-tag">Esmaltação em Gel</span>
+                                    <h4 class="overlay-title">Vermelho Clássico Impecável</h4>
+                                    <button class="overlay-zoom-btn" aria-label="Ampliar imagem">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Formato Amendoado (Almond) -->
+                    <div class="gallery-card" data-category="alongamento">
+                        <div class="gallery-card-inner">
+                            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=700&q=80" alt="Alongamento Almond com Esmalte Nude" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <span class="overlay-tag">Alongamento em Gel</span>
+                                    <h4 class="overlay-title">Formato Almond Nude Glamour</h4>
+                                    <button class="overlay-zoom-btn" aria-label="Ampliar imagem">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Baby Boomer Delicado -->
+                    <div class="gallery-card" data-category="nailart">
+                        <div class="gallery-card-inner">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="Efeito Baby Boomer Suave" class="gallery-img">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <span class="overlay-tag">Nail Art</span>
+                                    <h4 class="overlay-title">Degradê Baby Boomer Suave</h4>
+                                    <button class="overlay-zoom-btn" aria-label="Ampliar imagem">
+                                        <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO DEPOIMENTOS DAS CLIENTES                -->
+        <!-- ============================================== -->
+        <section class="testimonials-section" id="depoimentos">
+            <div class="container">
+                <div class="section-center-header">
+                    <span class="section-pretitle">AVALIAÇÕES</span>
+                    <h2 class="section-main-title">O QUE DIZEM AS CLIENTES</h2>
+                    <p class="section-subtitle">A satisfação e autoestima de cada cliente é nossa maior conquista.</p>
+                    <div class="section-title-line center-line"></div>
+                </div>
+
+                <div class="testimonials-grid">
+                    
+                    <!-- Depoimento 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "A Ana é simplesmente maravilhosa! O acabamento é tão fino e natural que todo mundo elogia. As unhas duram quase um mês intactas sem quebrar nenhuma. Super recomendo!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar-initials">CR</div>
+                            <div class="author-info">
+                                <strong class="author-name">Camila Rocha</strong>
+                                <span class="author-service">Alongamento em Gel Fibra</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Espaço acolhedor, atendimento com café quentinho e uma atenção aos detalhes surreal. O banho de gel salvou minhas unhas fracas. Sou cliente fiel há mais de um ano!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar-initials">MS</div>
+                            <div class="author-info">
+                                <strong class="author-name">Mariana Silveira</strong>
+                                <span class="author-service">Banho de Gel & Francesinha</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "A delicadeza e precisão no traço das nail arts é incrível. Sem falar na higiene de todo o material, tudo 100% esterilizado e descartável. Nota mil!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar-initials">BL</div>
+                            <div class="author-info">
+                                <strong class="author-name">Beatriz Lima</strong>
+                                <span class="author-service">Esmaltação & Nail Art Personalizada</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO CONTATO E AGENDAMENTO                   -->
+        <!-- ============================================== -->
+        <section class="contact-section" id="contato">
+            <div class="container">
+                <div class="contact-card-banner">
+                    <div class="contact-left">
+                        <span class="section-pretitle text-white">AGENDE SEU MOMENTO</span>
+                        <h2 class="contact-cta-title">Pronta para ter unhas deslumbrantes?</h2>
+                        <p class="contact-cta-desc">
+                            Clique no botão abaixo para conversar diretamente pelo WhatsApp, tirar dúvidas e garantir seu horário no espaço.
+                        </p>
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Studio Ana Beatriz Eugênio • Atendimento com hora marcada</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Terça a Sábado: das 09h às 19h</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fa-brands fa-instagram"></i>
+                                <span>@anabeatriz.naildesigner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <div class="booking-box">
+                            <div class="booking-icon-wrapper">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <h3 class="booking-box-title">Agendamento Rápido</h3>
+                            <p class="booking-box-text">Envie uma mensagem e receba a confirmação do seu horário com facilidade.</p>
+                            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Ana!%20Gostaria%20de%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20esta%20semana." 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-whatsapp-large">
+                               <i class="fa-brands fa-whatsapp"></i>
+                               <span>Chamar no WhatsApp</span>
+                            </a>
+                            <span class="booking-note"><i class="fa-solid fa-shield-heart"></i> Resposta rápida em horário comercial</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================== -->
+    <!-- RODAPÉ (FOOTER)                                -->
+    <!-- ============================================== -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col footer-col-brand">
+                <div class="footer-logo">
+                    <div class="logo-monogram-circle small">
+                        <svg viewBox="0 0 100 100" class="monogram-svg">
+                            <ellipse cx="50" cy="50" rx="42" ry="46" class="circle-ring" />
+                            <path d="M 38 24 L 38 76" class="letter-stem" />
+                            <path d="M 38 30 Q 62 30 62 44 Q 62 54 38 54" class="b-loop" />
+                            <path d="M 38 54 Q 68 54 68 66 Q 68 76 38 76" class="b-loop" />
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name-top">ANA BEATRIZ EUGENIO</span>
+                        <span class="logo-sub">NAIL DESIGNER</span>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    Especialista em realçar a beleza e a saúde das suas unhas com técnicas avançadas e acabamento impecável.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Links Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#trabalho">Portfólio</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Agendamentos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Procedimentos</h4>
+                <ul class="footer-links">
+                    <li><a href="#servicos">Alongamento de Unhas</a></li>
+                    <li><a href="#servicos">Banho de Gel</a></li>
+                    <li><a href="#servicos">Esmaltação em Gel</a></li>
+                    <li><a href="#servicos">Nail Art Exclusiva</a></li>
+                    <li><a href="#servicos">Manutenção Preventiva</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Conecte-se</h4>
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Pinterest">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                </div>
+                <p class="footer-schedule-text">
+                    <strong>Horário de Funcionamento:</strong><br>
+                    Ter a Sáb: 09h00 - 19h00
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Ana Beatriz Eugênio Nail Designer. Todos os direitos reservados.</p>
+                <p class="footer-made-with">Feito com carinho & excelência nos detalhes ♡</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1%20Ana!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." 
+       class="floating-whatsapp-btn" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Falar pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Agendar Horário</span>
+    </a>
+
+    <!-- Modal Lightbox para Ampliar Fotos do Portfólio -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+        <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+        <div class="lightbox-dialog">
+            <button class="lightbox-close-btn" id="lightboxClose" aria-label="Fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="lightbox-content">
+                <img src="" alt="" class="lightbox-img" id="lightboxImg">
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JavaScript Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
